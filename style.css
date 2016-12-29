@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css?family=Oleo+Script');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+body{
+    padding-top: 10px;
+}
+
+.wrapper {
+    width: 972px;
+    background-color: #FAEBD7;
+    margin: 0 auto;
+}
+
+nav {
+    margin: 0 auto;
+    width: 100%;
+    background-color: white;
+}
+
+.logo {
+    margin-left: 20px;
+    font-size: 40px;
+    font-family: 'Oleo Script', cursive;
+    display: inline-block;
+}
+
+.tamplate {
+    font-size: 11px;
+    font-family: arial;
+    color: gray;
+    display: block;
+    text-align: center;
+}
+
+.logo a {
+    color: black;
+}
+
+ul {
+    -margin: 0;
+    margin-right: 40px;
+    padding-left: 0;
+    padding-top: 30px;
+    list-style: none;
+    float: right;
+    text-align: center;
+    font-size: 14px;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+
+}
+
+li a {
+    color: #666666;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.button_1 a {
+    padding: 5px;
+    background: #ffbc45;
+    border-radius: 5px;
+    color: white;
+    font-size: 18px;
+}
+
+.topmenu > li {
+    display: inline-block;
+    margin-right: 20px;
+    margin-left: 25px;
+    position: relative;
+}
+
+.submenu {
+    position: absolute;
+    border-radius: 3px;
+    left: -50px;
+    display: none;
+    border: 1px solid #666666; 
+    z-index: 10;
+    background-color: white; 
+}
+
+.submenu li {
+    padding: 10px 0;
+    line-height: 20px;
+    border-bottom: 1px solid #666666;
+    margin: 0 10px;
+}
+.submenu li:last-child {
+    padding: 10px 0;
+    line-height: 20px;
+    margin: 0 10px;
+    border-bottom: 1px solid white;
+}
+
+.submenu li a {
+    color: gray;
+    padding-right: 50px;
+}
+
+.submenu li a span{
+    color: gray;
+    font-size: 8px;
+    text-align: justify; 
+}
+
+.topmenu li:hover .submenu {
+    display: block;
+
+}
+
+.submenu li a:hover {
+    background-color: lightgray;
+}
+
+
+.hero-unit {
+    background-color: white;
+    position: relative;
+    padding: 10px 0 50px 0;
+    border-bottom: solid 1px gray;
+    margin: 0 20px 0 20px;
+}
+
+.hero {
+    background-color: #2e490c;
+    width: 302px;
+    height: 198px;
+    margin-left: 74px;
+    margin-top: 60px;
+
+}
+
+.hero h2 {
+    position: relative;
+    top: -180px;
+    left: 380px;
+    font-size: 38px;
+    font-family: 'Open Sans', sans-serif;
+    text-align: justify;
+    width: 500px; /* почему??*/
+}
+
+.abstract {
+    position: relative;
+    left: 380px;
+    top: -210px;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    text-align: justify;
+    width: 460px;
+    padding-bottom: 20px;
+    border-bottom: solid 1px gray;
+}
+
+.watch {
+    position: relative;
+    left: 670px;
+    top: -220px;
+    font-size: 17px;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+    padding: 5px 0px 0px 10px;
+    background-color: #ffbc45;
+    width: 165px; /* ??????*/
+    height: 43px;
+    border-radius: 2px;
+    color: white;
+}
+/*.line{
+    width: 10px;
+    height: 40px;
+    color: black;
+    z-index: 20;
+}*/
+
+.watch span {
+    text-transform: uppercase;
+    color: #d28600;
+    font-size: 10px;
+    font-weight: bold;
+    font-family: arial;
+    position: relative;
+    top: -10px;
+    margin: 0px;
+    padding-bottom: 0px;
+}
+
+i {
+    position: relative;
+    top: -275px;
+    left: 820px;
+    z-index: 20;
+    color: white;
+}
+
+.galery{
+    background-color: white;
+}
+
+.galery a {
+    padding-left: 20px;
+}
+
+.galery a img:hover {
+    opacity: 0.5;
+}
+
+
+    
+
+
+
+/*.galery p {
+    width: 290px;
+    -display: inline;
+    float: left;
+    padding-left: 20px;
+}*/
