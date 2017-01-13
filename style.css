@@ -11,6 +11,8 @@ body{
     margin: 0 auto;
 }
 
+/* ================ HEADER ==================*/
+
 nav {
     margin: 0 auto;
     width: 100%;
@@ -36,8 +38,7 @@ nav {
     color: black;
 }
 
-ul {
-    -margin: 0;
+.topmenu {
     margin-right: 40px;
     padding-left: 0;
     padding-top: 30px;
@@ -50,7 +51,7 @@ ul {
 a {
     text-decoration: none;
     display: inline-block;
-
+    color: gray;
 }
 
 li a {
@@ -77,10 +78,31 @@ li a {
     position: absolute;
     border-radius: 3px;
     left: -50px;
+    top: 18px;
     display: none;
     border: 1px solid #666666; 
     z-index: 10;
     background-color: white; 
+    list-style: none;
+    padding: 0;
+    white-space: nowrap;
+}
+.submenu::before, .submenu::after {
+    content: "";
+    border: 10px solid transparent;
+    border-top: 10px solid black;
+    z-index: 30;
+    position: relative;
+    top: 9px;
+    right: 40px;
+}
+
+.submenu::after{
+    border-top: 10px solid white;
+    z-index: 40;
+    position: relative;
+    top: -175px;
+    right: 40px;
 }
 
 .submenu li {
@@ -88,10 +110,22 @@ li a {
     line-height: 20px;
     border-bottom: 1px solid #666666;
     margin: 0 10px;
+    text-align: left;
+
 }
-.submenu li:last-child {
-    padding: 10px 0;
+
+.submenu li:first-child {
+    padding: 0px 0 10px 0;
     line-height: 20px;
+    margin: 0 10px;
+    border-bottom: 1px solid #666666;
+    
+}
+
+
+.submenu li:last-child {
+    padding: 10px 0 0 0;
+    -line-height: 20px;
     margin: 0 10px;
     border-bottom: 1px solid white;
 }
@@ -101,9 +135,9 @@ li a {
     padding-right: 50px;
 }
 
-.submenu li a span{
+.submenu li  span{
     color: gray;
-    font-size: 8px;
+    font-size: 12px;
     text-align: justify; 
 }
 
@@ -116,7 +150,7 @@ li a {
     background-color: lightgray;
 }
 
-
+/*  ==================  CONTENT_1 ======================== */
 .hero-unit {
     background-color: white;
     position: relative;
@@ -170,12 +204,6 @@ li a {
     border-radius: 2px;
     color: white;
 }
-/*.line{
-    width: 10px;
-    height: 40px;
-    color: black;
-    z-index: 20;
-}*/
 
 .watch span {
     text-transform: uppercase;
@@ -197,6 +225,10 @@ i {
     color: white;
 }
 
+/*  ==================  END CONTENT_1 ======================== */
+
+/* ========================= CONTENT_2 / GALERY ========================*/
+
 .galery{
     background-color: white;
 }
@@ -209,14 +241,60 @@ i {
     opacity: 0.5;
 }
 
+/* ------------------TAB -----------------------*/
 
+.tab{
+    background-color: white;
+}
+
+#tab2, #tab3 {
+    -position: fixed; 
+}
+
+.tab > a,
+.tab #tab2:target ~ a:nth-of-type(1),
+.tab #tab3:target ~ a:nth-of-type(1),
+.tab > div { 
+    padding: 5px; border: 1px solid #aaa; 
+}
+
+.tab > a { 
+    line-height: 28px;
+    background: #fff; 
+    text-decoration: none;
+    }
+
+#tab2,
+#tab3,
+.tab > div,
+.tab #tab2:target ~ div:nth-of-type(1),
+.tab #tab3:target ~ div:nth-of-type(1) {
+    display: none; }
+
+.tab > div:nth-of-type(1),
+.tab #tab2:target ~ div:nth-of-type(2),
+.tab #tab3:target ~ div:nth-of-type(3) {
     
+    display: block; 
+}
+
+.tab > a:nth-of-type(1),
+.tab #tab2:target ~ a:nth-of-type(2),
+.tab #tab3:target ~ a:nth-of-type(3) {
+    border-bottom: 2px solid #fff; 
+}
+
+/* ========================= END CONTENT_2 / GALERY ========================*/
+
+/* ========================== FOOTER ========================================*/
 
 
 
-/*.galery p {
-    width: 290px;
-    -display: inline;
-    float: left;
-    padding-left: 20px;
-}*/
+
+
+/* ========================== END FOOTER ========================================*/
+
+
+
+
+
