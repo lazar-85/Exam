@@ -10,6 +10,14 @@ body{
     background-color: #FAEBD7;
     margin: 0 auto;
 }
+p::selection{
+   background: #ffe7b9;
+    color: #ffbc45;}
+
+p::-moz-selection{
+    background: #ffe7b9;
+    color: #ffbc45;
+}
 
 /* ================ HEADER ==================*/
 
@@ -241,6 +249,18 @@ i {
     opacity: 0.5;
 }
 
+.description {
+    list-style: none;
+    padding: 0;
+    }
+.description > li{
+    display: inline-block;
+    width: 30%;
+    text-align: justify;
+    margin-left: 20px;
+}
+
+
 /* ------------------TAB -----------------------*/
 
 .tab{
@@ -255,13 +275,22 @@ i {
 .tab #tab2:target ~ a:nth-of-type(1),
 .tab #tab3:target ~ a:nth-of-type(1),
 .tab > div { 
-    padding: 5px; border: 1px solid #aaa; 
+    padding: 5px;
+    margin: 0;
+    border-top: 1px solid #aaa;
+    border-left: none;
+    border-right: 1px solid #aaa;
+    border-bottom: 1px solid #aaa;
+    -border: 1px solid #aaa; 
+
 }
 
 .tab > a { 
     line-height: 28px;
     background: #fff; 
     text-decoration: none;
+    margin-left: -4px;
+
     }
 
 #tab2,
@@ -276,6 +305,7 @@ i {
 .tab #tab3:target ~ div:nth-of-type(3) {
     
     display: block; 
+    margin-top: -2px;
 }
 
 .tab > a:nth-of-type(1),
@@ -283,6 +313,8 @@ i {
 .tab #tab3:target ~ a:nth-of-type(3) {
     border-bottom: 2px solid #fff; 
 }
+
+
 
 /* ========================= END CONTENT_2 / GALERY ========================*/
 
