@@ -8,6 +8,7 @@
 
 body{
     padding-top: 10px;
+    background-color: lightgray;
 }
 
 .wrapper {
@@ -252,11 +253,29 @@ i {
 /* ========================= CONTENT_2 / GALERY ========================*/
 
 .galery{
-    background-color: white;
+    background-color: green;
+}
+.main_galery_title{
+    padding: 10px;
+    font-size: 18px;
+    text-transform: capitalize;
+    font-family: 'Open Sans', sans-serif;
 }
 
-.galery a {
-    padding-left: 20px;
+.sub_galery{
+    display: inline-block;
+    margin-left: 20px;
+    border: 2px solid white; 
+    height: 147px;  
+}
+.galery_title{
+    display: inline-block;
+    height: 50px;
+    width: 299px;
+    background-image: url(images/back_img_1.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    margin-left: 20px;
 }
 
 .galery a img:hover {
