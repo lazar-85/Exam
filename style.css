@@ -389,16 +389,61 @@ i {
 .footer{
     background-color: white;
 
+
 }
 
 h4{
     display: inline-block;
+    text-transform: uppercase;
 }
 
-.footer > ul{
+.footer_menu{
     display: inline-block;
+    margin-left: 40px;
 }
 
+
+.footer_menu li{
+
+    border-bottom: 1px solid gray;
+    list-style-type: none;
+    padding: 10px 0 5px 0;
+    margin-left: -40px;
+    font-family: Arial;
+    color:  #666666;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: left;
+}
+
+.footer_menu li:last-child{
+
+    border-bottom: none;
+}
+
+h4 {
+    margin: 10px 0 0 0;
+    padding: 0;
+    color: #ffad19;
+    font-family: Arial;
+    font-size: 12px;
+    font-weight: 700;
+    text-align: left;
+}
+.footer_menu_3{
+    position: relative;
+    top: -93px;
+}
+.footer_menu_3 li{
+    padding: 20px 0 10px 0;
+
+}
+.footer_menu_3 li::before{
+    content: url(images/icon_footer.png);
+    position: relative;
+    top: 5px;
+    {
 
 /* ========================== END FOOTER ========================================*/
 
